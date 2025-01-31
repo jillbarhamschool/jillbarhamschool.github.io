@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JILL BARHAM TSS</title>
+
+  <!--  font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- custom js file link -->
+  <script src="js/script.js"></script>
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!--header starts-->
+
+
+  <!--header endes-->
+  <!--body for home section starts-->
+  <!--background-->
+
+  <!--trades-->
+  <section id="index">
+    <img src="images/logo.png" alt="" class="lg" style="width: 60px; height: 60px;">
+    <div class="index-section">
+      <div class="trade-title-index">
+        <h1 style="color: #fff;">CHOOSE LANGUAGE / HITAMO URURIMI</h1>
+      </div>
+    </div>
+    <div class="services">
+      <a href="kin/home.html" class="en">
+        <div class="card-number">
+          <div class="icon">
+            <img src="images/rwanda.gif" alt="" style="width: 200px; height: 90px;">
+          </div>
+          <h2>IKINYARWANDA</h2>
+        </div>
+      </a>
+      <a href="home.html" class="en"><div class="card-number">
+        <div class="icon">
+          <img src="images/uk.png" alt="" style="width: 200px; height: 90px;">
+        </div>
+        <h2>ENGLISH</h2>
+      </div>
+    </a>
+    </div>
+  </section>
+  <!--trade section ends-->
+
+  <!--loader-->
+  <div class="loader"></div>
+
+  <!--Footer ends-->
+  <!--LINKS-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".menu").hasClass("active")) {
+          $(".menu").removeClass("active");
+          $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+        }
+        else {
+          $(".menu").addClass("active");
+          $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+
+        }
+
+      });
+    });
+  </script>
+</body>
+
+</html>
